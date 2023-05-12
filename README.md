@@ -1,5 +1,5 @@
 ## simple_build_context
-<img src="assets/simple_build_context.png" width="200" height="200" />
+<img src="assets/simple_build_context.png" width="300" height="150" />
 ---
 #### Tired of passing context down through multiple layers of your Flutter application? Our library simplifies this process by providing an easy-to-use context wrapper that can be easily accessed throughout your codebase. With our library, you'll be able to streamline your code and improve the readability of your application, all while enjoying the benefits of a more efficient development process. Our context library provides unique features that differentiate it from other similar libraries in the market, including seamless integration with popular Flutter packages, such as Provider, and the ability to access context from anywhere in your codebase. With our library, you can focus on developing your application, rather than worrying about the complexities of context management.
 
@@ -279,10 +279,7 @@ List<String> subList = letter - ['a', 'c']; // Return ['b', 'd']
 
 
 ## Example
-```Flutter
-import 'package:flutter/material.dart';
-import 'package:simple_build_context/src/config_build_context.dart';
-
+```dart
 class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {

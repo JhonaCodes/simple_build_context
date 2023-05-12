@@ -17,7 +17,7 @@ To install simple_build_context, add the following dependency to your pubspec.ya
 
 ````flutter
 dependencies:
-  simple_build_context: ^1.0.0
+  simple_build_context: ^1.0.1
 ````
 
 Then run  ```flutter pub get``` on the command line

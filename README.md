@@ -294,7 +294,7 @@ class MyHomePage extends StatelessWidget {
           onTap: () => context.pushNamed('/detailsPage'), // we use only context not Navigator.of(context)
           child: Text(
             'Press Me',
-            style: context.primaryTextTheme.title, // we use only context not Theme.of(context)
+            style: context.primaryTextTheme.titleMedium, // we use only context not Theme.of(context)
           ),
         ),
       ),

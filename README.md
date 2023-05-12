@@ -17,7 +17,7 @@ To install simple_build_context, add the following dependency to your pubspec.ya
 
 ````flutter
 dependencies:
-  simple_build_context: ^1.0.3
+  simple_build_context: ^1.0.4
 ````
 
 Then run  ```flutter pub get``` on the command line
@@ -284,19 +284,27 @@ List<String> subList = letter - ['a', 'c']; // Return ['b', 'd']
 
 ## Example
 ```dart
-class MyHomePage extends StatelessWidget {
+class HomePage extends StatelessWidget {
+  const HomePage({super.key});
+
+
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
-      backgroundColor: context.scaffoldBackgroundColor, // There is no Theme.of(context)
+
+      backgroundColor: context.scaffoldBackgroundColor,
+
       body: Center(
-        child: GestureDetector(
-          onTap: () => context.pushNamed('/detailsPage'), // we use only context not Navigator.of(context)
-          child: Text(
-            'Press Me',
-            style: context.primaryTextTheme.titleMedium, // we use only context not Theme.of(context)
+
+        child: ElevatedButton(
+          onPressed: () => context.pushNamed('/pageRoute'),
+          child: Text('NextPage',
+            style: context.primaryTextTheme.titleMedium,
           ),
+
         ),
+
       ),
     );
   }

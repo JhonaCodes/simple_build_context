@@ -17,3 +17,8 @@
 ## 1.0.4
 
 * Correct example.
+
+
+## 1.0.5
+
+* Upgrade SDK

@@ -1,10 +1,10 @@
 name: simple_build_context
 description: simple_build_context is a library that simplifies accessing and using BuildContext properties in Flutter, enabling faster and more efficient development.
-version: 1.0.5
+version: 1.0.6
 homepage: https://github.com/JhonaCodes/simple_build_context
 
 environment:
-  sdk: '>=3.4.4 <4.0.0'
+  sdk: '>=3.4.3 <4.0.0'
   flutter: ">=1.17.0"
 
 dependencies:

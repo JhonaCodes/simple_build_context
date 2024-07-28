@@ -1,27 +1,23 @@
 import 'package:flutter/material.dart';
 
 extension ThemeExtension on BuildContext {
-
   ThemeData get theme => Theme.of(this);
 
   TextTheme get textTheme => Theme.of(this).textTheme;
 
   TextTheme get primaryTextTheme => Theme.of(this).primaryTextTheme;
 
-
   BottomAppBarTheme get bottomAppBarTheme => Theme.of(this).bottomAppBarTheme;
 
   BottomSheetThemeData get bottomSheetTheme => Theme.of(this).bottomSheetTheme;
 
-
   Color get backgroundColor => Theme.of(this).colorScheme.surface;
-  Color get onPrimary    => Theme.of(this).colorScheme.onPrimary;
+  Color get onPrimary => Theme.of(this).colorScheme.onPrimary;
   Color get onBackground => Theme.of(this).colorScheme.onSurface;
 
   Color get primaryColor => Theme.of(this).primaryColor;
 
   Color get scaffoldBackgroundColor => Theme.of(this).scaffoldBackgroundColor;
-
 
   AppBarTheme get appBarTheme => Theme.of(this).appBarTheme;
 
@@ -92,15 +88,20 @@ extension ThemeExtension on BuildContext {
 
   TextStyle? get bodyText2 => textTheme.bodyMedium;
 
-  TextStyle? get cardTitle => textTheme.headlineSmall?.copyWith(fontWeight: FontWeight.bold);
+  TextStyle? get cardTitle =>
+      textTheme.headlineSmall?.copyWith(fontWeight: FontWeight.bold);
 
-  TextStyle? get errorText => textTheme.bodyMedium?.copyWith(color: theme.colorScheme.error);
+  TextStyle? get errorText =>
+      textTheme.bodyMedium?.copyWith(color: theme.colorScheme.error);
 
-  TextStyle? get textFieldLabel => textTheme.titleMedium?.copyWith(color: theme.disabledColor);
+  TextStyle? get textFieldLabel =>
+      textTheme.titleMedium?.copyWith(color: theme.disabledColor);
 
-  TextStyle? get disabledTextStyle => textTheme.bodyLarge?.copyWith(color: theme.disabledColor);
+  TextStyle? get disabledTextStyle =>
+      textTheme.bodyLarge?.copyWith(color: theme.disabledColor);
 
-  TextStyle? get tabBarTextStyle => textTheme.titleMedium?.copyWith(fontWeight: FontWeight.bold);
+  TextStyle? get tabBarTextStyle =>
+      textTheme.titleMedium?.copyWith(fontWeight: FontWeight.bold);
 
   Color get disabledColor => theme.disabledColor;
 
@@ -122,12 +123,12 @@ extension ThemeExtension on BuildContext {
 
   Color get warningColor => Colors.yellow;
 
-
   /// The font size for the title of the current theme.
   double get titleFontSize => Theme.of(this).textTheme.titleLarge!.fontSize!;
 
   /// The font size for the subtitle of the current theme.
-  double get subtitleFontSize => Theme.of(this).textTheme.titleMedium!.fontSize!;
+  double get subtitleFontSize =>
+      Theme.of(this).textTheme.titleMedium!.fontSize!;
 
   /// The font size for the body text of the current theme.
   double get bodyFontSize => Theme.of(this).textTheme.bodyLarge!.fontSize!;
@@ -144,7 +145,6 @@ extension ThemeExtension on BuildContext {
   /// The height of the app bar for the current theme.
   double get appBarHeight => kToolbarHeight;
 
-
   /// The height of the current theme's material design card.
   double get cardHeight => 156;
 
@@ -158,12 +158,12 @@ extension ThemeExtension on BuildContext {
 
   bool get isDarkTheme => theme.brightness == Brightness.dark;
 
-
   double get iconSize => theme.iconTheme.size ?? 24.0;
 
   EdgeInsetsGeometry get buttonPadding => theme.buttonTheme.padding;
 
-  EdgeInsetsGeometry get inputDecorationPadding => theme.inputDecorationTheme.contentPadding ?? EdgeInsets.zero;
+  EdgeInsetsGeometry get inputDecorationPadding =>
+      theme.inputDecorationTheme.contentPadding ?? EdgeInsets.zero;
 
   double get iconButtonSize => buttonPadding.vertical + iconSize;
 

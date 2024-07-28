@@ -8,6 +8,9 @@ extension NavigatorExtension on BuildContext {
   Future<T?> pushNamed<T>(String routeName, {Object? arguments}) =>
       Navigator.pushNamed<T?>(this, routeName, arguments: arguments);
 
+  Future<T?> pushReplacement<T, TO>(String routeName, {TO? result, Object? arguments}) =>
+      Navigator.pushReplacementNamed<T, TO>(this, routeName, arguments: arguments, result: result);
+
   bool canPop() => Navigator.canPop(this);
 
   void popUntil(RoutePredicate predicate) =>

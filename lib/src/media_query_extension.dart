@@ -21,7 +21,8 @@ extension MediaQueryExtension on BuildContext {
 
   Brightness get platformBrightness => MediaQuery.of(this).platformBrightness;
 
-  double textScaleFactor(double fontSize) => MediaQuery.of(this).textScaler.scale(fontSize);
+  double textScaleFactor(double fontSize) =>
+      MediaQuery.of(this).textScaler.scale(fontSize);
 
   double get mediaQueryShortestSide => mediaQuerySize.shortestSide;
 
@@ -54,10 +55,12 @@ extension MediaQueryExtension on BuildContext {
   double get screenHeight => MediaQuery.of(this).size.height;
 
   /// Whether or not the device is currently in landscape mode.
-  bool get isLandscapeMode => MediaQuery.of(this).orientation == Orientation.landscape;
+  bool get isLandscapeMode =>
+      MediaQuery.of(this).orientation == Orientation.landscape;
 
   /// Whether or not the device is currently in portrait mode.
-  bool get isPortraitMode => MediaQuery.of(this).orientation == Orientation.portrait;
+  bool get isPortraitMode =>
+      MediaQuery.of(this).orientation == Orientation.portrait;
 
   /// The total amount of space allocated for the bottom navigation bar.
   double get bottomNavigationBarHeight => kBottomNavigationBarHeight;
@@ -69,15 +72,19 @@ extension MediaQueryExtension on BuildContext {
   double get systemGestureInsetBottom => MediaQuery.of(this).padding.bottom;
 
   /// The amount of padding on the left and right edges of the screen.
-  EdgeInsets get horizontalPadding => EdgeInsets.symmetric(horizontal: MediaQuery.of(this).size.width * 0.05);
+  EdgeInsets get horizontalPadding =>
+      EdgeInsets.symmetric(horizontal: MediaQuery.of(this).size.width * 0.05);
 
   /// The amount of padding on the top and bottom edges of the screen.
-  EdgeInsets get verticalPadding => EdgeInsets.symmetric(vertical: MediaQuery.of(this).size.height * 0.05);
+  EdgeInsets get verticalPadding =>
+      EdgeInsets.symmetric(vertical: MediaQuery.of(this).size.height * 0.05);
 
   /// The amount of padding on all edges of the screen.
-  EdgeInsets get allPadding => EdgeInsets.all(MediaQuery.of(this).size.width * 0.05);
+  EdgeInsets get allPadding =>
+      EdgeInsets.all(MediaQuery.of(this).size.width * 0.05);
 
   bool get isHighContrast => MediaQuery.of(this).highContrast;
 
-  bool get isInteractive => MediaQuery.of(this).platformBrightness == Brightness.dark;
+  bool get isInteractive =>
+      MediaQuery.of(this).platformBrightness == Brightness.dark;
 }

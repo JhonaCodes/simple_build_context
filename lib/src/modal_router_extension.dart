@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 extension ModalRouteExtension<T> on BuildContext {
-
   ModalRoute<T>? get modalRoute => ModalRoute.of<T>(this);
 
   RouteSettings? get routeSettings => modalRoute?.settings;
@@ -10,9 +9,6 @@ extension ModalRouteExtension<T> on BuildContext {
   ScaffoldState? get scaffold => Scaffold.of(this);
 
   /// Check if the [Scaffold] is open
-  bool get isScaffoldOpen => scaffold?.isDrawerOpen ?? false || scaffold!.isEndDrawerOpen;
-
+  bool get isScaffoldOpen =>
+      scaffold?.isDrawerOpen ?? false || scaffold!.isEndDrawerOpen;
 }
-
-
-

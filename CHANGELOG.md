@@ -23,4 +23,5 @@
 * Upgrade SDK
 
 ## 1.0.7
+## 1.0.8
 * Upgrade src project data and SDK.

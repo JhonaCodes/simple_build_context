@@ -14,9 +14,9 @@ extension ThemeExtension on BuildContext {
   BottomSheetThemeData get bottomSheetTheme => Theme.of(this).bottomSheetTheme;
 
 
-  Color get backgroundColor => Theme.of(this).colorScheme.background;
+  Color get backgroundColor => Theme.of(this).colorScheme.surface;
   Color get onPrimary    => Theme.of(this).colorScheme.onPrimary;
-  Color get onBackground => Theme.of(this).colorScheme.onBackground;
+  Color get onBackground => Theme.of(this).colorScheme.onSurface;
 
   Color get primaryColor => Theme.of(this).primaryColor;
 
@@ -114,9 +114,9 @@ extension ThemeExtension on BuildContext {
 
   Color get tertiaryColor => theme.colorScheme.surface;
 
-  Color get tertiaryColorLight => theme.colorScheme.background;
+  Color get tertiaryColorLight => theme.colorScheme.surface;
 
-  Color get tertiaryColorDark => theme.colorScheme.background.withOpacity(0.8);
+  Color get tertiaryColorDark => theme.colorScheme.surface.withOpacity(0.8);
 
   Color get successColor => Colors.green;
 

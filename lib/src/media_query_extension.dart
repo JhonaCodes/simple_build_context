@@ -21,7 +21,7 @@ extension MediaQueryExtension on BuildContext {
 
   Brightness get platformBrightness => MediaQuery.of(this).platformBrightness;
 
-  double get textScaleFactor => MediaQuery.of(this).textScaleFactor;
+  double textScaleFactor(double fontSize) => MediaQuery.of(this).textScaler.scale(fontSize);
 
   double get mediaQueryShortestSide => mediaQuerySize.shortestSide;
 

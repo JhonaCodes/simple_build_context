@@ -15,6 +15,3 @@ extension ModalRouteExtension<T> on BuildContext {
   bool get isScaffoldOpen =>
       scaffold?.isDrawerOpen ?? false || scaffold!.isEndDrawerOpen;
 }
-
-
-

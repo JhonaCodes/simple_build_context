@@ -19,10 +19,10 @@ extension ThemeExtension on BuildContext {
 
   /// The background color for the application.
   Color get backgroundColor => Theme.of(this).colorScheme.surface;
-  
+
   /// The color for text and icons on top of the primary color.
   Color get onPrimary => Theme.of(this).colorScheme.onPrimary;
-  
+
   /// The color for text and icons on top of the background color.
   Color get onBackground => Theme.of(this).colorScheme.onSurface;
 
@@ -175,7 +175,8 @@ extension ThemeExtension on BuildContext {
   Color get tertiaryColorLight => theme.colorScheme.surface;
 
   /// The dark tertiary color.
-  Color get tertiaryColorDark => theme.colorScheme.surface.withValues(alpha: 80);
+  Color get tertiaryColorDark =>
+      theme.colorScheme.surface.withValues(alpha: 80);
 
   /// The color for success messages.
   Color get successColor => Colors.green;
@@ -235,15 +236,4 @@ extension ThemeExtension on BuildContext {
 
   /// The radius of the icon buttons in the current theme.
   double get iconButtonRadius => iconButtonSize / 2;
-}
-
-extension on Color {
-  Color withValues({int? alpha, int? red, int? green, int? blue}) {
-    return Color.fromARGB(
-      alpha ?? this.alpha,
-      red ?? this.red,
-      green ?? this.green,
-      blue ?? this.blue,
-    );
-  }
 }

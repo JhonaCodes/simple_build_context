@@ -6,9 +6,6 @@ void main() {
   // Test group for String extensions.
   group('StringExtension Tests', () {
     test('isNullOrEmpty returns true for null or empty strings', () {
-      String? nullString;
-      expect(nullString?.isNullOrEmpty ?? true, isTrue);
-
       const emptyString = '';
       expect(emptyString.isNullOrEmpty, isTrue);
 
@@ -118,8 +115,9 @@ void main() {
 
     testWidgets('MediaQuery extensions return correct data', (tester) async {
       // Set a portrait orientation for the test.
-      tester.binding.window.physicalSizeTestValue = const Size(1080, 1920); // Typical phone portrait resolution
-      tester.binding.window.devicePixelRatioTestValue = 1.0;
+      tester.view.physicalSize =
+          const Size(1080, 1920); // Typical phone portrait resolution
+      tester.view.devicePixelRatio = 1.0;
 
       await tester.pumpWidget(
         MaterialApp(
@@ -136,8 +134,8 @@ void main() {
       );
 
       // Reset the window size after the test.
-      tester.binding.window.clearPhysicalSizeTestValue();
-      tester.binding.window.clearDevicePixelRatioTestValue();
+      tester.view.resetPhysicalSize();
+      tester.view.resetDevicePixelRatio();
     });
 
     testWidgets('Navigator extensions can be called', (tester) async {
@@ -151,7 +149,8 @@ void main() {
               return ElevatedButton(
                 onPressed: () {
                   // Verify that navigator extensions do not throw exceptions.
-                  expect(() => context.navigateToNamed('/test'), returnsNormally);
+                  expect(
+                      () => context.navigateToNamed('/test'), returnsNormally);
                 },
                 child: const Text('Push'),
               );

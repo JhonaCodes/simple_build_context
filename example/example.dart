@@ -123,7 +123,8 @@ class FullExamplePage extends StatelessWidget {
               // Use context to check device type and orientation.
               Text('Is this a phone? ${context.isPhone}'),
               Text('Screen Width: ${context.screenWidth.toStringAsFixed(2)}'),
-              Text('Orientation: ${context.isPortrait ? 'Portrait' : 'Landscape'}'),
+              Text(
+                  'Orientation: ${context.isPortrait ? 'Portrait' : 'Landscape'}'),
               const SizedBox(height: 20),
 
               // --- Theme Extensions ---
@@ -132,7 +133,8 @@ class FullExamplePage extends StatelessWidget {
               Text(
                 'This text uses the primary color.',
                 // Access colors directly from the context's theme.
-                style: context.textTheme.bodyLarge?.copyWith(color: context.primaryColor),
+                style: context.textTheme.bodyLarge
+                    ?.copyWith(color: context.primaryColor),
               ),
               Text(
                 'This is a headline style.',

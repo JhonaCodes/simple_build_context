@@ -1,4 +1,4 @@
-## 1.1.1
+## 1.1.0
 
 * Removed unnecessary platform folders (android, ios, linux, macos, windows).
 * Documented and improved `example/example.dart` with more use cases.

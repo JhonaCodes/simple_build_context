@@ -1,7 +1,7 @@
 ## simple_build_context
 <img src="https://raw.githubusercontent.com/JhonaCodes/simple_build_context/main/assets/simple_build_context.png" width="300" height="150" />
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Nombre del paquete](https://img.shields.io/pub/v/simple_build_context.svg)](https://pub.dev/packages/simple_build_context) [![Dart 3](https://img.shields.io/badge/Dart-3%2B-blue.svg)](https://dart.dev/) [![Flutter 3.10](https://img.shields.io/badge/Flutter-3%2B-blue.svg)](https://flutter.dev/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Nombre del paquete](https://img.shields.io/pub/v/simple_build_context.svg)](https://pub.dev/packages/simple_build_context) [![Dart 3](https://img.shields.io/badge/Dart-3%2B-blue.svg)](https://dart.dev/) [![Flutter 3.10](https://img.shields.io/badge/Flutter-3%2B-blue.svg)](https://flutter.dev/) [![Flutter Test](https://github.com/JhonaCodes/simple_build_context/actions/workflows/flutter_test.yaml/badge.svg)](https://github.com/JhonaCodes/simple_build_context/actions/workflows/flutter_test.yaml)
 
 
 ---
@@ -17,7 +17,7 @@ To install simple_build_context, add the following dependency to your pubspec.ya
 
 ````flutter
 dependencies:
-  simple_build_context: ^1.0.6
+  simple_build_context: ^1.1.0
 ````
 
 Then run  ```flutter pub get``` on the command line

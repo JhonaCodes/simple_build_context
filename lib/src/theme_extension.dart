@@ -12,7 +12,7 @@ extension ThemeExtension on BuildContext {
   TextTheme get primaryTextTheme => Theme.of(this).primaryTextTheme;
 
   /// The bottom app bar theme for the application.
-  BottomAppBarTheme get bottomAppBarTheme => Theme.of(this).bottomAppBarTheme;
+  BottomAppBarThemeData get bottomAppBarTheme => Theme.of(this).bottomAppBarTheme;
 
   /// The bottom sheet theme for the application.
   BottomSheetThemeData get bottomSheetTheme => Theme.of(this).bottomSheetTheme;
@@ -33,7 +33,7 @@ extension ThemeExtension on BuildContext {
   Color get scaffoldBackgroundColor => Theme.of(this).scaffoldBackgroundColor;
 
   /// The app bar theme for the application.
-  AppBarTheme get appBarTheme => Theme.of(this).appBarTheme;
+  AppBarThemeData get appBarTheme => Theme.of(this).appBarTheme;
 
   /// Define platform
   TargetPlatform get platform => Theme.of(this).platform;
